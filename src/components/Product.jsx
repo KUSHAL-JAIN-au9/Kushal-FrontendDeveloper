@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../assets/mobile-login.png";
+import FAL9 from "../assets/FAL9.png";
 import Maecenas from "../assets/maecenas.png";
 
 // motion
@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 
 const Product = () => {
   return (
-    <div className="my-12" id="product">
+    <div className="my-12" id="FALCON9">
       {/* about text */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12">
         <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
@@ -19,7 +19,7 @@ const Product = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
           >
-            <img src={aboutImg} alt="" className="w-full" />
+            <img src={FAL9} alt="" className="w-auto h-72 rounded-xl " />
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.3)}
@@ -39,7 +39,7 @@ const Product = () => {
               refly the most expensive parts of the rocket, which in turn drives
               down the cost of space access.
             </p>
-            <button className="btn-primary">Learn More</button>
+            <button className="btn-primary"> Check Capsules</button>
           </motion.div>
         </div>
       </div>
@@ -74,10 +74,13 @@ const Product = () => {
                 dignissim finibus ac sit amet magna.
               </p>
               <h5 className="text-brandPrimary text-xl font-semibold mb-2">
-                Tim Smith
+                Elon Musk
               </h5>
               <p className="text-base text-neutralGrey mb-8">
-                British Dragon Boat Racing Association
+                a renowned entrepreneur known for co-founding Tesla, SpaceX,
+                Neuralink, and The Boring Company, among other ventures, with a
+                focus on electric vehicles, space exploration, neurotechnology,
+                and sustainable energy solutions.
               </p>
               <div>
                 <div className="flex gap-8 items-center flex-wrap">
@@ -116,7 +119,7 @@ const Product = () => {
                       href="/"
                       className="font-bold text-brandPrimary hover:text-neutralBlack"
                     >
-                      Meet all customers
+                      Check All Capsules
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="17"

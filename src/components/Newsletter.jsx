@@ -1,28 +1,44 @@
 import React from "react";
+import { SiMinutemailer } from "react-icons/si";
 
 // motion
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+import { TextInput } from "flowbite-react";
 
 const Newsletter = () => {
   return (
-    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16">
-      <motion.div 
-    
-      variants={fadeIn("up", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.6 }}
-      className="flex items-center justify-center lg:w-2/5 mx-auto">
+    <div
+      className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16"
+      id="subscribe"
+    >
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.6 }}
+        className="flex items-center justify-center lg:w-2/5 mx-auto"
+      >
         <div className="text-center">
           <h2 className="lg:text-5xl text-3xl text-neutralBlack font-semibold mb-6 lg:leading-snug">
-            Pellentesque suscipit fringilla libero eu.
+            Subscribe to get our SpaceX News letters
           </h2>
+
           <div className="flex gap-8 items-center justify-center">
+            <div className="max-w-md text-white">
+              <div className=" block"></div>
+              <TextInput
+                id="email4"
+                placeholder="name@flowbite.com"
+                required
+                rightIcon={SiMinutemailer}
+                type="email"
+              />
+            </div>
             <button className="btn-primary text-white">
-            Get a Demo
-              <svg
+              Subscribe
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
                 height="8"
@@ -34,7 +50,7 @@ const Newsletter = () => {
                   d="M10.2503 7.00012L12.7201 4.53039C13.013 4.23749 13.013 3.7626 12.7201 3.4697L10.2503 0.999966M12.5004 4.00004L1.50012 4.00004"
                   stroke="white"
                 />
-              </svg>
+              </svg> */}
             </button>
           </div>
         </div>

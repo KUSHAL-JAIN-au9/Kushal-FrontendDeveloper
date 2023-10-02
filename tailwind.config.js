@@ -9,11 +9,16 @@ export default {
     extend: {
       colors: {
         brandPrimary: "#4CAF4F",
-        neutralDGrey: "#4D4D4D",
-        neutralGrey: "#717171",
-        neutralSilver: "#F5F7FA",
-        gray900: "#18191F",
+        neutralDGrey: "#FFF",
+        neutralGrey: "#FFF",
+        neutralSilver: "#000",
+        gray900: "#FFF",
         neutralBlack: "#263238",
+      },
+      backgroundImage: {
+        "my-image-class1": "url('./assets/FALBAN1.png')",
+        "my-image-class2": "url('./assets/FAL9.png')",
+        "my-image-class3": "url('./assets/FALBAN3.png')",
       },
     },
   },

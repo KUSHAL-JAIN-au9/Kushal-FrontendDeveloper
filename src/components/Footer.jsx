@@ -9,7 +9,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
-import logo from "../assets/logo.png";
+import logo from "../assets/main-logo.svg";
 
 const MyFooter = () => {
   return (
@@ -24,13 +24,18 @@ const MyFooter = () => {
               <img
                 src={logo}
                 alt=""
-                className="w-10 inline-block items-center"
+                className="w-full inline-block items-center"
               />
-              <span>NEXCENT</span>
+              {/* <span>Space X</span> */}
             </a>
             <div className="my-8">
-              <p className="mb-1"> Copyright © 2020 Nexcent ltd.</p>
+              <p className="mb-1"> Copyright © 2023 SpaceX ltd.</p>
               <p>All rights reserved</p>
+
+              <p className="mt-1">
+                For inquiries about Starship and our human spaceflight program,
+                contact sales@spacex.com
+              </p>
             </div>
 
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-start text-white">

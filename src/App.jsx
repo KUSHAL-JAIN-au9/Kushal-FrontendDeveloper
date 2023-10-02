@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Blog from "./components/Blog";
+import Dragon from "./components/Dragon";
 import MyFooter from "./components/Footer";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <Services />
       <About />
+      <Dragon />
       <Product />
       <Blog />
       <Newsletter />
