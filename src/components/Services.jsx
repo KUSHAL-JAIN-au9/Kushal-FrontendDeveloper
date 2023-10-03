@@ -8,24 +8,24 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Membership Organisations",
+      title: "COST AS LOW AS $275K",
       decription:
-        "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/membership.png",
+        "$275k for 50kg to SSO with additional mass at $5.5k/kg. Affordable rates also available to Mid-Inclination LEO, GTO, and TLI.",
+      image: "/src/assets/icons/money.png",
     },
     {
       id: 2,
-      title: "National Associations",
+      title: "SCHEDULE CERTAINTY",
       decription:
-        "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/association.png",
+        "SSO missions approximately every 4 months. Frequent launches to mid-inclination. Inquire for other orbits.",
+      image: "/src/assets/icons/schedule.png",
     },
     {
       id: 3,
-      title: "Clubs And Groups",
+      title: "CONTRACT FLEXIBILITY",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/group-club.png",
+      image: "/src/assets/icons/contract.png",
     },
   ];
   return (
@@ -38,7 +38,8 @@ const Services = () => {
         className="text-center my-8"
       >
         <h2 className="text-4xl text-neutralDGrey font-semibold mb-2">
-          Our Vendors
+          Make life multiplanetary by enabling Humans to become a
+          multi-planetary Species.
         </h2>
         <p className="text-neutralGrey">
           We have been collaborating with Fortune 500+ vendors to build
@@ -63,13 +64,19 @@ const Services = () => {
         viewport={{ once: false, amount: 0.7 }}
         className="mt-20 text-center md:w-1/2 mx-auto"
       >
-        <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
+        {/* <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
           Make life multiplanetary by enabling Humans to become a
           multi-planetary Species.
+        </h2> */}
+        <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
+          SMALLSAT RIDESHARE PROGRAM
         </h2>
-        <p className="text-neutralGrey">
+        {/* <p className="text-neutralGrey">
           We have been collaborating with Fortune 500+ vendors to build
           incredible Rockets to launch other planets.
+        </p> */}
+        <p className="text-neutralGrey">
+          DEDICATED RIDESHARE MISSIONS AS LOW AS $275K*. SEARCH FLIGHTS BELOW.
         </p>
       </motion.div>
 
@@ -86,7 +93,7 @@ const Services = () => {
             className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex items-center justify-center h-full"
           >
             <div className="">
-              <div className="bg-[#E8F5E9] w-14 h-14 mx-auto mb-4 rounded-tl-3xl rounded-br-3xl">
+              <div className="bg-[#E8F5E9] w-14 h-16 mx-auto mb-4 rounded-tl-3xl rounded-br-3xl">
                 <img src={service.image} alt="" className="-ml-5" />
               </div>
               <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">

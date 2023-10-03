@@ -6,10 +6,14 @@ import { Link } from "react-scroll";
 // import icons from react icons
 import { GrLanguage } from "react-icons/gr";
 import { FaXmark, FaBars } from "react-icons/fa6";
+import { Link as Navlink, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  const history = useNavigate();
+  const navParam = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -38,6 +42,11 @@ const Navbar = () => {
     window.open(externalWebsiteURL, "_blank");
   };
 
+  const handleScrollToHome = () => {
+    console.log("clicked");
+    history("/");
+  };
+
   const navItems = [
     // { link: "Home", path: "home" },
     // { link: "Service", path: "service" },
@@ -59,11 +68,8 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center text-base gap-8">
           <Link
-            to={"home"}
-            spy={true}
-            smooth={true}
-            offset={-100}
-            href={"home"}
+            to={"/"}
+            onClick={handleScrollToHome}
             className="text-2xl font-semibold flex items-center space-x-3 cursor-pointer"
           >
             <img
@@ -73,33 +79,35 @@ const Navbar = () => {
             />
             {/* <span>SPACE X</span> */}
           </Link>
-          <ul className="md:flex space-x-12 hidden">
-            {navItems.map(({ link, path, href }) => (
+          {navParam.pathname !== "/capsules" && (
+            <ul className={`md:flex space-x-12 hidden`}>
+              {navItems.map(({ link, path, href }) => (
+                <Link
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  key={link}
+                  href={path || href}
+                  className="block text-base text-gray900 hover:text-brandPrimary first:font-medium cursor-pointer"
+                >
+                  {link}
+                </Link>
+              ))}
               <Link
-                to={path}
+                to={"/"}
+                onClick={handleScrollToExternalWebsite}
                 spy={true}
                 smooth={true}
                 offset={-100}
-                key={link}
-                href={path || href}
+                target={"_blank"}
+                href={"https://www.starlink.com/"}
                 className="block text-base text-gray900 hover:text-brandPrimary first:font-medium cursor-pointer"
               >
-                {link}
+                STAR LINK
               </Link>
-            ))}
-            <Link
-              // to={path}
-              onClick={handleScrollToExternalWebsite}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              target={"_blank"}
-              href={"https://www.starlink.com/"}
-              className="block text-base text-gray900 hover:text-brandPrimary first:font-medium cursor-pointer"
-            >
-              STAR LINK
-            </Link>
-          </ul>
+            </ul>
+          )}
 
           <div className="space-x-12 hidden lg:flex items-center">
             <a
@@ -108,7 +116,7 @@ const Navbar = () => {
             >
               Login
             </a>
-            <button className="bg-brandPrimary text-white  py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey">
+            <button className="bg-brandPrimary text-white  py-2 px-4 transition-all duration-300 rounded hover:bg-neutralSilver hover:border border-white">
               Sign up
             </button>
           </div>
@@ -128,25 +136,28 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div
-          className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
-            isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
-          }`}
-        >
-          {navItems.map(({ link, path }) => (
-            <Link
-              to={path}
-              spy={true}
-              smooth={true}
-              offset={-90}
-              key={link}
-              onClick={toggleMenu}
-              className="block  text-white hover:text-gray-500"
-            >
-              {link}
-            </Link>
-          ))}
-        </div>
+        {navParam.pathname !== "/capsules" && (
+          <div
+            className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
+              isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
+            }`}
+          >
+            {navItems.map(({ link, path, href }) => (
+              <Link
+                to={path}
+                spy={true}
+                smooth={true}
+                offset={-90}
+                key={link}
+                href={path || href}
+                onClick={toggleMenu}
+                className="block  text-white hover:text-gray-500"
+              >
+                {link}
+              </Link>
+            ))}
+          </div>
+        )}
       </nav>
     </header>
   );

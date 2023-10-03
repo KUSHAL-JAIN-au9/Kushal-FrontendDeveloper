@@ -10,19 +10,19 @@ const Blog = () => {
   const blogs = [
     {
       id: 1,
-      title: "Creating Streamlined Safeguarding Processes with OneRen",
-      image: "/src/assets/blog1.png",
+      title: `  FALCON 9 is
+      First Orbital Class Rocket Capable of Reflight`,
+      image: "/src/assets/FALBAN2.png",
     },
     {
       id: 2,
-      title:
-        "What are your safeguarding responsibilities and how can you manage them?",
-      image: "/src/assets/blog2.png",
+      title: "Service to Earth Orbit,Moon,Mars and beyond",
+      image: "/src/assets/FALBAN3.png",
     },
     {
       id: 3,
-      title: "Revamping the Membership Model with Triathlon Australia",
-      image: "/src/assets/blog3.png",
+      title: "TAKING HUMANS TO SPACE",
+      image: "/src/assets/FALBAN4.png",
     },
   ];
   return (
@@ -53,11 +53,11 @@ const Blog = () => {
         className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between mt-16"
       >
         {blogs.map((blog) => (
-          <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
+          <div key={blog.id} className="mx-auto  relative mb-12 cursor-pointer">
             <img
               src={blog.image}
               alt=""
-              className="mx-auto hover:scale-95 transition-all duration-300"
+              className="mx-auto h-72 hover:scale-95 transition-all duration-300 rounded-xl border border-white"
             />
 
             <div className="text-center px-4 py-8 bg-black shadow-lg border border-white rounded-md md:w-3/4 mx-auto absolute -bottom-12 left-0 right-0">

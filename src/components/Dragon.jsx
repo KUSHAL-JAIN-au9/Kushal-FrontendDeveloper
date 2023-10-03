@@ -8,16 +8,8 @@ import { fadeIn } from "../variants";
 
 const Dragon = () => {
   return (
-    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12" id= 'dragon'>
+    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12" id="dragon">
       <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-        >
-          <img src={DragonImg} alt="" className="w-auto h-72 rounded-xl " />
-        </motion.div>
         <motion.div
           variants={fadeIn("left", 0.3)}
           initial="hidden"
@@ -36,6 +28,14 @@ const Dragon = () => {
             to the space station.
           </p>
           <button className="btn-primary"> Check Capsules</button>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <img src={DragonImg} alt="" className="w-auto h-72 rounded-xl " />
         </motion.div>
       </div>
     </div>

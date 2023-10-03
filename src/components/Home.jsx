@@ -6,7 +6,6 @@ import banner2 from "../assets/FALBAN2.png";
 import banner3 from "../assets/FALBAN3.png";
 
 const Home = () => {
-  const backgroundImageUrl = "../assets/FALBAN1.png";
   return (
     <div className=" bg-black " id="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen flex justify-center items-center rounded-xl">
@@ -17,7 +16,7 @@ const Home = () => {
             </div>
             {/* hero text */}
             <div className="md:w-1/2 h-[400px]">
-              <h1 className="text-5xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className="text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
                 FALCON 9{" "}
                 <span className="text-brandPrimary leading-snug">
                   First Orbital Class Rocket Capable of Reflight
@@ -28,7 +27,7 @@ const Home = () => {
                 SpaceX for the reliable and safe transport of satellites and the
                 Dragon spacecraft into orbit.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey">
+              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
                 Check Capsules
               </button>
             </div>
@@ -39,7 +38,7 @@ const Home = () => {
             </div>
             {/* hero text */}
             <div className="md:w-1/2 h-[400px]">
-              <h1 className="text-5xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className=" text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
                 FALCON HEAVY{" "}
                 <span className="text-brandPrimary leading-snug">
                   OVER 5 MILLION LBS OF THRUST
@@ -52,7 +51,7 @@ const Home = () => {
                 the payload of the next closest operational vehicle, the Delta
                 IV Heavy, at one-third the cost.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey">
+              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
                 Check Capsules
               </button>
             </div>
@@ -62,21 +61,21 @@ const Home = () => {
               <img src={banner3} alt="" className="hidden" />
             </div>
             {/* hero text */}
-            <div className="md:w-1/2 h-[400px]">
-              <h1 className="text-5xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
+            <div className="md:w-7/12 h-[400px]">
+              <h1 className="text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug md:text-5xl">
                 STARSHIP{" "}
-                <span className="text-brandPrimary leading-snug">
+                <span className="text-brandPrimary text-xl leading-snug">
                   Service to Earth Orbit,Moon,Mars and beyond
                 </span>
               </h1>
-              <p className="text-neutralGrey text-base mb-8">
+              <p className=" text-neutralGrey mb-8 ">
                 fully reusable spacecraft designed for a wide range of missions,
                 including crewed missions to the Moon, Mars, and beyond, as well
                 as satellite launches, cargo missions, and even point-to-point
                 Earth travel. It represents one of SpaceX's most ambitious and
                 groundbreaking projects.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey">
+              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
                 Check Capsules
               </button>
             </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import FALHEAVY from "../assets/FALHEAVY.png";
-import aboutImg2 from "../assets/mobile-login.png";
 
 // motion
 import { motion } from "framer-motion";
@@ -90,7 +89,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="md: mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+          <div className="md:mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
