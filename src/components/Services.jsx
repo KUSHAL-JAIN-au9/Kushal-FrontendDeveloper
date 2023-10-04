@@ -46,13 +46,13 @@ const Services = () => {
           incredible Rockets.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8 ">
-          <img src="src/assets/icons/company1.png" alt="" />
-          <img src="src/assets/icons/company2.png" alt="" />
-          <img src="src/assets/icons/company3.png" alt="" />
-          <img src="src/assets/icons/company4.png" alt="" />
-          <img src="src/assets/icons/company5.png" alt="" />
-          <img src="src/assets/icons/company6.png" alt="" />
-          <img src="src/assets/icons/company7.png" alt="" />
+          <img src="../assets/icons/company1.png" alt="" />
+          <img src="../assets/icons/company2.png" alt="" />
+          <img src="../assets/icons/company3.png" alt="" />
+          <img src="../assets/icons/company4.png" alt="" />
+          <img src="../assets/icons/company5.png" alt="" />
+          <img src="../assets/icons/company6.png" alt="" />
+          <img src="../assets/icons/company7.png" alt="" />
         </div>
       </motion.div>
 
