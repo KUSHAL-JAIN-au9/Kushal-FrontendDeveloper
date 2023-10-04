@@ -1,7 +1,39 @@
-
-This repository contains a React project bootstrapped with Vite, a fast and lightweight build tool for modern web development.
 ## Kushal-FrontendDeveloper
-# SPACEX-lANDING-PAGE
+
+# SpaceX Landing Page
+
+## Overview
+
+This project is a dynamic and user-friendly landing page built using React, designed to showcase information about SpaceX rockets and capsules. SpaceX, a prominent aerospace manufacturer and space transportation company, is known for its advanced rocket and spacecraft technology. This landing page leverages SpaceX's open-sourced data, accessible through [SpaceX Data API](https://docs.spacexdata.com/).
+
+## Key Features
+
+- **Visually Stunning Design**: The landing page boasts a modern and visually striking banner layout, highlighting the UI/UX design skills of the developer. The design is pixel-perfect and optimized for various screen sizes and browsers.
+
+- **Advanced Search Functionality**: The search form is equipped with three filters, allowing users to search for capsules based on status, original launch, and type. The search functionality is smooth, bug-free, and optimized for quick results retrieval.
+
+- **Responsive Design**: The landing page is fully responsive, ensuring a seamless user experience across different devices and screen sizes. The use of Semantic HTML and adherence to SEO best practices contribute to its accessibility and search engine visibility.
+
+- **Elegant Data Grid**: The data grid section presents information in an elegant and organized manner. Data is paginated, with ten items displayed per page. Users can click on an item to view detailed information in a popup, enhancing user engagement.
+
+- **Optimized Queries**: To ensure fast loading times, optimized queries have been implemented, resulting in a snappy user experience.
+
+- **Quality Code**: The project adheres to clean coding practices, producing a codebase free from ESLint and PHPCS issues. While not mandatory, the inclusion of test cases further enhances the project's quality.
+
+
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+- Semantic HTML
+- Flow-bite 
+- JavaScript
+
+## Contributors
+
+- Kushal D Jain
+
 
 This repository contains a React project bootstrapped with Vite, a fast and lightweight build tool for modern web development.
 
@@ -11,7 +43,7 @@ To get started with the project, follow the steps below:
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone https://github.com/KUSHAL-JAIN-au9/HabitTracker-React-Codingninjas.git
+     https://github.com/KUSHAL-JAIN-au9/Kushal-FrontendDeveloper.git
    ```
 
 2. Navigate to the project directory:
@@ -62,6 +94,7 @@ vite-react-project/
   |   |   |- Dragon.jsx
   |   |   |- Footer.jsx
   |   |   |- Home.jsx
+  |   |   |- Input.jsx
   |   |   |- Loading.jsx
   |   |   |- Navbar.jsx
   |   |   |- Newsletter.jsx
@@ -128,6 +161,8 @@ In the project directory, you can run the following commands:
 ![Screenshot (25)](https://github.com/KUSHAL-JAIN-au9/Kushal-FrontendDeveloper/assets/36365855/4b2b037a-ed16-41d1-bb26-0fe947ffdbc1)
 
 ![Screenshot (26)](https://github.com/KUSHAL-JAIN-au9/Kushal-FrontendDeveloper/assets/36365855/829a90ce-f7ef-41a4-9319-219d1bcd00dd)
+
+
 
 
 # React + Vite
