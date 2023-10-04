@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
+import FALBAN2 from "../assets/FALBAN2.png";
+import FALBAN3 from "../assets/FALBAN3.png";
+import FALBAN4 from "../assets/FALBAN4.png";
 
 const Blog = () => {
   const blogs = [
@@ -13,17 +16,17 @@ const Blog = () => {
       id: 1,
       title: `  FALCON 9 is
       First Orbital Class Rocket Capable of Reflight`,
-      image: "/src/assets/FALBAN2.png",
+      image: FALBAN2,
     },
     {
       id: 2,
       title: "Service to Earth Orbit,Moon,Mars and beyond",
-      image: "/src/assets/FALBAN3.png",
+      image: FALBAN3,
     },
     {
       id: 3,
       title: "TAKING HUMANS TO SPACE",
-      image: "/src/assets/FALBAN4.png",
+      image: FALBAN4,
     },
   ];
   return (

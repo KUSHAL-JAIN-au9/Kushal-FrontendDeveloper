@@ -7,6 +7,14 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
+import Company1 from "../assets/company1.png";
+import Company2 from "../assets/company2.png";
+import Company3 from "../assets/company3.png";
+import Company4 from "../assets/company4.png";
+import Company5 from "../assets/company5.png";
+import Company6 from "../assets/company6.png";
+import Company7 from "../assets/company7.png";
+
 const Product = () => {
   return (
     <div className="my-12" id="FALCON9">
@@ -84,36 +92,13 @@ const Product = () => {
               </p>
               <div>
                 <div className="flex gap-8 items-center flex-wrap">
-                  <img
-                    src="/src/assets/icons/company1.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/icons/company2.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/icons/company3.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/icons/company4.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/icons/company5.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                  <img
-                    src="/src/assets/icons/company6.png"
-                    alt=""
-                    className="cursor-pointer"
-                  />
+                  <img src={Company1} alt="" className="cursor-pointer" />
+                  <img src={Company2} alt="" className="cursor-pointer" />
+                  <img src={Company3} alt="" className="cursor-pointer" />
+                  <img src={Company4} alt="" className="cursor-pointer" />
+                  <img src={Company5} alt="" className="cursor-pointer" />
+                  <img src={Company6} alt="" className="cursor-pointer" />
+                  <img src={Company7} alt="" className="cursor-pointer" />
                   <div className="flex gap-8 items-center">
                     <a
                       href="/"

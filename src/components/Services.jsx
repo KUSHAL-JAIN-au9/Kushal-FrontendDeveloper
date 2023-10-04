@@ -4,6 +4,17 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
+import Company1 from "../assets/company1.png";
+import Company2 from "../assets/company2.png";
+import Company3 from "../assets/company3.png";
+import Company4 from "../assets/company4.png";
+import Company5 from "../assets/company5.png";
+import Company6 from "../assets/company6.png";
+import Company7 from "../assets/company7.png";
+import money from "../assets/money.png";
+import schedule from "../assets/schedule.png";
+import contact from "../assets/contract.png";
+
 const Services = () => {
   const services = [
     {
@@ -11,21 +22,21 @@ const Services = () => {
       title: "COST AS LOW AS $275K",
       decription:
         "$275k for 50kg to SSO with additional mass at $5.5k/kg. Affordable rates also available to Mid-Inclination LEO, GTO, and TLI.",
-      image: "/src/assets/money.png",
+      image: money,
     },
     {
       id: 2,
       title: "SCHEDULE CERTAINTY",
       decription:
         "SSO missions approximately every 4 months. Frequent launches to mid-inclination. Inquire for other orbits.",
-      image: "/src/assets/schedule.png",
+      image: schedule,
     },
     {
       id: 3,
       title: "CONTRACT FLEXIBILITY",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/contract.png",
+      image: contact,
     },
   ];
   return (
@@ -46,13 +57,13 @@ const Services = () => {
           incredible Rockets.
         </p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8 ">
-          <img src="../assets/icons/company1.png" alt="" />
-          <img src="../assets/icons/company2.png" alt="" />
-          <img src="../assets/icons/company3.png" alt="" />
-          <img src="../assets/icons/company4.png" alt="" />
-          <img src="../assets/icons/company5.png" alt="" />
-          <img src="../assets/icons/company6.png" alt="" />
-          <img src="../assets/icons/company7.png" alt="" />
+          <img src={Company1} alt="" />
+          <img src={Company2} alt="" />
+          <img src={Company3} alt="" />
+          <img src={Company4} alt="" />
+          <img src={Company5} alt="" />
+          <img src={Company6} alt="" />
+          <img src={Company7} alt="" />
         </div>
       </motion.div>
 
