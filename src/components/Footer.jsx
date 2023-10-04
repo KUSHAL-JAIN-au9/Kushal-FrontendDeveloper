@@ -8,8 +8,8 @@ import {
   BsMailbox2,
   BsTwitter,
 } from "react-icons/bs";
-import { SiMinutemailer } from "react-icons/si";
 import logo from "../assets/main-logo.svg";
+import Input from "./Input";
 
 const MyFooter = () => {
   return (
@@ -88,7 +88,8 @@ const MyFooter = () => {
             </div>
             <div>
               <Footer.Title title="Stay up to date" className="text-white" />
-              <div className="max-w-md text-white">
+              <Input />
+              {/* <div className="max-w-md text-white">
                 <div className="mb-2 block"></div>
                 <TextInput
                   id="email4"
@@ -97,7 +98,7 @@ const MyFooter = () => {
                   rightIcon={SiMinutemailer}
                   type="email"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

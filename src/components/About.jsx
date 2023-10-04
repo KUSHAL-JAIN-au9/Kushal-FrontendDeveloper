@@ -5,8 +5,11 @@ import FALHEAVY from "../assets/FALHEAVY.png";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const history = useNavigate();
+
   return (
     <div>
       {/* about text */}
@@ -41,7 +44,15 @@ const About = () => {
               operational rockets, Falcon Heavy can lift nearly 64 metric tons
               (141,000 lbs) to orbit.
             </p>
-            <button className="btn-primary"> Check Capsules</button>
+            <button
+              className="btn-primary"
+              onClick={() => {
+                history("/capsules");
+              }}
+            >
+              {" "}
+              Check Capsules
+            </button>
           </motion.div>
         </div>
       </div>
@@ -57,97 +68,87 @@ const About = () => {
         <div className="md:w-full mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
           <div className="md: mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
+                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
+                <div className="lan-info">
+                  <h4>259</h4>
+                  <p>FALCON 9 LAUNCHES</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
+                <div className="lan-info">
+                  <h4>192</h4>
+                  <p>FALCON 9 LANDINGS</p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="flex items-center justify-center gap-2">
+                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
+                <div className="lan-info">
+                  <h4>192</h4>
+                  <p>FALCON 9 REFLIGHTS</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
                 <div className="lan-info">
                   <h4>7</h4>
                   <p>FALCON HEAVY LAUNCHES</p>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
-                <div className="lan-info">
-                  <h4>192</h4>
-                  <p>TOTAL REFLIGHTS</p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-8">
-              <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
-                <div className="lan-info">
-                  <h4>13</h4>
-                  <p>FALCON HEAVY LANDINGS</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
-                <div className="lan-info">
-                  <h4>10</h4>
-                  <p>FALCON HEAVY REFLIGHTS</p>
-                </div>
-              </div>
             </div>
           </div>
-          <div className="md:mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+          <div className="md: mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
                 <div className="lan-info">
-                  <h4>42</h4>
-                  <p>DRAGON LAUNCHES</p>
+                  <h4>20</h4>
+                  <p>DRAGON REFLIGHTS</p>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
                 <div className="lan-info">
                   <h4>38</h4>
-                  <p>DRAGON REFLIGHTS</p>
+                  <p>DRAGON VISITS TO THE ISS</p>
                 </div>
               </div>
             </div>
             <div className="space-y-8">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
                 <div className="lan-info">
                   <h4>42</h4>
                   <p>DRAGON LAUNCHES</p>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
                 {/* <img src="/src/assets/icons/click.png" alt="" /> */}
-                <div>
+                <div className="lan-info">
                   <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    38
+                    13
                   </h4>
-                  <p>DRAGON REFLIGHTS</p>
+                  <p>FALACON HEAVY LANDINGS</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* <div className="md:w-1/2">
-            <h2 className="text-4xl text-neutralDGrey font-semibold mb-2 md:w-2/3">
-              Helping a local <br />{" "}
-              <span className="text-brandPrimary">
-                business reinvent itself
-              </span>
-            </h2>
-            <p>We reached here with our hard work and dedication</p>
-          </div> */}
-
           {/* stats */}
-          <div className="md: mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+          {/* <div className="md: mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/group.png" alt="" /> */}
+           
                 <div className="lan-info">
-                  <h4>257</h4>
-                  <p>TOTAL LAUNCHES</p>
+                  <h4>10</h4>
+                  <p>FALACON REFLIGHTS</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/clubs.png" alt="" /> */}
+     
                 <div className="lan-info">
                   <h4>217</h4>
                   <p>TOTAL LANDINGS</p>
@@ -156,21 +157,21 @@ const About = () => {
             </div>
             <div className="space-y-8">
               <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/click.png" alt="" /> */}
+             
                 <div className="lan-info">
                   <h4>192</h4>
                   <p>TOTAL REFLIGHTS</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                {/* <img src="/src/assets/icons/payments.png" alt="" /> */}
+               
                 <div className="lan-info">
                   <h4>192</h4>
                   <p>TOTAL REFLIGHTS</p>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </div>

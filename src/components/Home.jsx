@@ -1,22 +1,23 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
-
-import banner from "../assets/FALBAN1.png";
-import banner2 from "../assets/FALBAN2.png";
-import banner3 from "../assets/FALBAN3.png";
+import FAL9 from "../assets/FALBAN1.png";
+import FALHEAVY from "../assets/FALBAN2.png";
+import STARSHIP from "../assets/FALBAN3.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const history = useNavigate();
   return (
     <div className=" bg-black " id="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen flex justify-center items-center rounded-xl">
         <Carousel className="w-full mx-auto rounded-xl ">
-          <div className="my-28 md:my-8 py-12  flex flex-col w-full mx-auto md:flex-row-reverse items-center justify-between gap-12 bg-my-image-class1 bg-cover  rounded-xl">
+          <div className="banner-main-section bg-my-image-class1">
             <div>
-              <img src={banner} alt="" className=" hidden" />
+              <img src={FAL9} alt="" className=" hidden" />
             </div>
             {/* hero text */}
             <div className="md:w-1/2 h-[400px]">
-              <h1 className="text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className="banner-main-heading md:text-4xl">
                 FALCON 9{" "}
                 <span className="text-brandPrimary leading-snug">
                   First Orbital Class Rocket Capable of Reflight
@@ -27,18 +28,23 @@ const Home = () => {
                 SpaceX for the reliable and safe transport of satellites and the
                 Dragon spacecraft into orbit.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  history("/capsules");
+                }}
+              >
                 Check Capsules
               </button>
             </div>
           </div>
-          <div className="my-28 md:my-8 py-12 flex flex-col w-full mx-auto md:flex-row-reverse items-center justify-between gap-12 bg-my-image-class2 bg-cover  rounded-xl">
+          <div className="banner-main-section bg-my-image-class2">
             <div>
-              <img src={banner2} alt="" className="hidden" />
+              <img src={FALHEAVY} alt="" className="hidden" />
             </div>
             {/* hero text */}
             <div className="md:w-1/2 h-[400px]">
-              <h1 className=" text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className=" banner-main-heading md:text-3xl">
                 FALCON HEAVY{" "}
                 <span className="text-brandPrimary leading-snug">
                   OVER 5 MILLION LBS OF THRUST
@@ -51,18 +57,23 @@ const Home = () => {
                 the payload of the next closest operational vehicle, the Delta
                 IV Heavy, at one-third the cost.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  history("/capsules");
+                }}
+              >
                 Check Capsules
               </button>
             </div>
           </div>
-          <div className="my-28 md:my-8 py-12 flex flex-col w-full mx-auto md:flex-row-reverse items-center justify-between gap-12 bg-my-image-class3 bg-cover bg-center rounded-xl">
+          <div className="banner-main-section bg-my-image-class3">
             <div>
-              <img src={banner3} alt="" className="hidden" />
+              <img src={STARSHIP} alt="" className="hidden" />
             </div>
             {/* hero text */}
             <div className="md:w-7/12 h-[400px]">
-              <h1 className="text-3xl sm:text-4xl mb-4 font-semibold text-neutralDGrey md:w-3/4 leading-snug md:text-5xl">
+              <h1 className="banner-main-heading md:text-5xl">
                 STARSHIP{" "}
                 <span className="text-brandPrimary text-xl leading-snug">
                   Service to Earth Orbit,Moon,Mars and beyond
@@ -75,7 +86,12 @@ const Home = () => {
                 Earth travel. It represents one of SpaceX's most ambitious and
                 groundbreaking projects.
               </p>
-              <button className="px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralSilver hover:border border-white">
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  history("/capsules");
+                }}
+              >
                 Check Capsules
               </button>
             </div>

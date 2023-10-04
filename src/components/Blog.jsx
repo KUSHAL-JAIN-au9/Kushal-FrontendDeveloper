@@ -5,6 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const blogs = [
@@ -65,8 +66,9 @@ const Blog = () => {
                 {blog.title}
               </h3>
               <div className="flex gap-8 items-center justify-center">
-                <a
-                  href="/"
+                <Link
+                  // href="/"
+                  to="/capsules"
                   className="font-bold text-brandPrimary hover:text-neutralBlack"
                 >
                   Check all Capsules
@@ -83,7 +85,7 @@ const Blog = () => {
                       stroke="#4CAF4F"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
