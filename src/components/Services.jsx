@@ -11,21 +11,21 @@ const Services = () => {
       title: "COST AS LOW AS $275K",
       decription:
         "$275k for 50kg to SSO with additional mass at $5.5k/kg. Affordable rates also available to Mid-Inclination LEO, GTO, and TLI.",
-      image: "/src/assets/icons/money.png",
+      image: "/src/assets/money.png",
     },
     {
       id: 2,
       title: "SCHEDULE CERTAINTY",
       decription:
         "SSO missions approximately every 4 months. Frequent launches to mid-inclination. Inquire for other orbits.",
-      image: "/src/assets/icons/schedule.png",
+      image: "/src/assets/schedule.png",
     },
     {
       id: 3,
       title: "CONTRACT FLEXIBILITY",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      image: "/src/assets/icons/contract.png",
+      image: "/src/assets/contract.png",
     },
   ];
   return (
