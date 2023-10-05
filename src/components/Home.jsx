@@ -3,12 +3,13 @@ import { Carousel } from "flowbite-react";
 import FAL9 from "../assets/FALBAN1.png";
 import FALHEAVY from "../assets/FALBAN2.png";
 import STARSHIP from "../assets/FALBAN3.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const history = useNavigate();
+  const navParam = useLocation();
   return (
-    <div className=" bg-black " id="home">
+    <div className=" bg-black " id="home" data-testid="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen flex justify-center items-center rounded-xl">
         <Carousel className="w-full mx-auto rounded-xl ">
           <div className="banner-main-section bg-my-image-class1">
@@ -28,14 +29,17 @@ const Home = () => {
                 SpaceX for the reliable and safe transport of satellites and the
                 Dragon spacecraft into orbit.
               </p>
-              <button
-                className="btn-primary"
-                onClick={() => {
-                  history("/capsules");
-                }}
-              >
-                Check Capsules
-              </button>
+              {navParam.pathname !== "/capsules" && (
+                <button
+                  data-testid="home-btn"
+                  className="btn-primary"
+                  onClick={() => {
+                    history("/capsules");
+                  }}
+                >
+                  Check Capsules
+                </button>
+              )}
             </div>
           </div>
           <div className="banner-main-section bg-my-image-class2">
@@ -57,14 +61,16 @@ const Home = () => {
                 the payload of the next closest operational vehicle, the Delta
                 IV Heavy, at one-third the cost.
               </p>
-              <button
-                className="btn-primary"
-                onClick={() => {
-                  history("/capsules");
-                }}
-              >
-                Check Capsules
-              </button>
+              {navParam.pathname !== "/capsules" && (
+                <button
+                  className="btn-primary"
+                  onClick={() => {
+                    history("/capsules");
+                  }}
+                >
+                  Check Capsules
+                </button>
+              )}
             </div>
           </div>
           <div className="banner-main-section bg-my-image-class3">
@@ -86,14 +92,16 @@ const Home = () => {
                 Earth travel. It represents one of SpaceX's most ambitious and
                 groundbreaking projects.
               </p>
-              <button
-                className="btn-primary"
-                onClick={() => {
-                  history("/capsules");
-                }}
-              >
-                Check Capsules
-              </button>
+              {navParam.pathname !== "/capsules" && (
+                <button
+                  className="btn-primary"
+                  onClick={() => {
+                    history("/capsules");
+                  }}
+                >
+                  Check Capsules
+                </button>
+              )}
             </div>
           </div>
         </Carousel>

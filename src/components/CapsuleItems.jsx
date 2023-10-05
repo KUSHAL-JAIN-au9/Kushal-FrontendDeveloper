@@ -187,7 +187,13 @@ const CapsuleItems = ({ capsules, setCapsules }) => {
         <div className="max-w-md text-white">
           <div className="mb-2 block"></div>
           <button
-            className=" h-11 bg-brandPrimary rounded-xl text-white  py-2 px-4 transition-all duration-300  hover:bg-neutralSilver hover:border border-white"
+            className={`h-11 bg-brandPrimary rounded-xl text-white  py-2 px-4 transition-all duration-300  hover:bg-neutralSilver hover:border border-white  ${
+              capsuleOriginalLaunch == "" &&
+              capsuleType == "" &&
+              capsulestatus == ""
+                ? "disabled:pointer-events-none opacity-50"
+                : ""
+            }  `}
             onClick={handleSubmit}
             disabled={
               capsuleOriginalLaunch == "" &&

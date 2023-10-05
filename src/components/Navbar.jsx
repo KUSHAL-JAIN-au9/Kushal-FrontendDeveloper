@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/main-logo.svg";
+import logo from "../assets/spacx-logo.png";
 
 import { Link } from "react-scroll";
 
@@ -76,6 +76,7 @@ const Navbar = () => {
               src={logo}
               alt=""
               className="w-full inline-block items-center"
+              data-testid="SPACE X"
             />
             {/* <span>SPACE X</span> */}
           </Link>
@@ -125,12 +126,13 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
+              data-testid="menu-button"
               className="text-gray900 focus:outline-none focus:text-gray-500"
             >
               {isMenuOpen ? (
                 <FaXmark className="h-6 w-6 text-primary" />
               ) : (
-                <FaBars className="h-6 w-6 text-primary" />
+                <FaBars className="h-6 w-6 text-primary open" />
               )}
             </button>
           </div>
@@ -138,7 +140,8 @@ const Navbar = () => {
 
         {navParam.pathname !== "/capsules" && (
           <div
-            className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${
+            data-testid="menu"
+            className={`space-y-4 px-4 mt-16 py-7 x ${
               isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
             }`}
           >
