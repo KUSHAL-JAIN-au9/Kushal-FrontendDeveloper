@@ -1,12 +1,12 @@
 ## Kushal-FrontendDeveloper
 1. Url of the video explanation of the Application 
    ```
-      https://www.loom.com/share/0efad9d103c849a68aaa7418259e763d?sid=11d16a6e-6ac3-4554-95f1-d4958d7f9691
+      [Video URL](https://www.loom.com/share/0efad9d103c849a68aaa7418259e763d?sid=5aebc695-3f56-4a4f-bd34-b43e6196dcb4)
    ```
 
-2. Live link of The Application
+2. Live Hosted link of The Application
    ```
-      https://spacexlandingpage.netlify.app
+      [Live Link](https://spacexlandingpage.netlify.app/)
    ```
 
 # SpaceX Landing Page
